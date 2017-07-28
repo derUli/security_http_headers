@@ -37,10 +37,11 @@ class SecurityHTTPHeaders extends Controller
     {
         $headers = headers_list();
         $header = trim($header, ': ');
+        $header .= ":";
         $result = false;
         
         foreach ($headers as $hdr) {
-            if (stripos($hdr, $header) !== false) {
+            if (startsWith($header, $hdr, false)) {
                 $result = true;
             }
         }
