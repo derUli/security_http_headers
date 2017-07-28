@@ -1,0 +1,8 @@
+{
+   "id" : "security_http_headers",
+   "version" : "1.0",
+   "description" : "Security HTTP Headers",
+   "categories" : ["secure", "security", "http", "headers"],
+   "compatible_from" : "2017.3.12",
+   "dependencies" : []
+}
